@@ -9,13 +9,13 @@ Output is printed in following format:
 Note does not take into queue time and calculate only real build time 
 
 ## Getting Started
-- Build application from sources and start it
+- Build application and run it
 - Pass all required params:
   - application name
   - owner name
   - app token
 
 ## TODO:
-- Use client APIs generators
+- Use client APIs generators instead of writing client/models by self
 - Tests
 - Timeouts
