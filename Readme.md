@@ -3,6 +3,7 @@
 ## Description
 C# console application which receives list of branches for the build and builds it.
 Output is printed in following format:
+
     <branch> build <status> in <time> seconds. Link to build logs: <link>
 
 Note does not take into queue time and calculate only real build time 
