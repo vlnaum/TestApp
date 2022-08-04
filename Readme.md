@@ -1,7 +1,7 @@
 # AppCenter Test Task
 
 ## Description
-C# console application which receives list of branches for the build and builds it.
+C# console application which receives list of branches from appcenter for the app and builds it.
 Output is printed in following format:
 
     <branch> build <status> in <time> seconds. Link to build logs: <link>
