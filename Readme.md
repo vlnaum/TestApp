@@ -17,3 +17,4 @@ Note does not take into queue time and calculate only real build time
 ## TODO:
 - Use client APIs generators
 - Tests
+- Timeouts
