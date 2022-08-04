@@ -44,6 +44,8 @@ public class BuildRunner
                 var build = Client.Builds.GetBuildAsync(OwnerName, AppName, buildIds[i]).GetAwaiter().GetResult();
                 buildsFinished = buildsFinished && IsBuildFinished(build);
                 result[i] = build;
+                if (!IsBuildFinished(build)) Console.WriteLine($"Waiting build for branch {build.SourceBranch} " +
+                                                               $"to succeed. Actual status is {build.Status}");
             }
 
             if (buildsFinished)
@@ -51,7 +53,6 @@ public class BuildRunner
                 return result.ToList();;
             }
             
-            Console.WriteLine("Waiting for all builds to succeed");
             Thread.Sleep(5000);
         }
     }
